@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position:absolute; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%; 
+    height: 100%; 
+    background-color: #000000; 
+    background-image: url("../img/sky.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+}
+
+.topo{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    height: 15vh;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.topo .navbar{
+    height: 100%;
+
+    background-color: none;
+}
+.topo nav a {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    width: 20%x;
+}
+.topo nav a img{
+    height: 70px;
+    width: 70px;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: none;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    height: 100%;
+    width: 180px;
+}
+#titulo{
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+#subtitulo{
+    margin: 0;
+    padding: 0;
+
+    text-transform: lowercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.275em;
+}
+
+.contemTodos{
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+
+    background-color: none;
+}
+
+.principal{
+    z-index: 2;
+
+    height: 375px;
+    min-width: 320px;
+
+    background-color: magenta;
+}
+
+.row{
+    height: 100%;
+    background-color: lime;
+}
+.colunaCalc {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+}
+.colunaResultado {
+    width: 100%;
+    height: 100%;
+    background-color: lightseagreen;
+}
+
+.circuloGrande{
+    position: absolute;
+    left: 0;
+
+    width: 160px;
+    height: 450px;
+
+    overflow: hidden;
+
+    background-color: none;
+}
+.fundoCirculoAzul{
+    position: absolute;
+    height: 100%;
+    left: -280px;
+
+}
+
+.circuloGrandeRoxo{
+    position: absolute;
+    bottom: 0;
+
+    width: 480px;
+    height: 160px;
+
+    overflow: hidden;
+
+    background-color: none;
+}
+.fundoCirculoRoxo{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+
+}
+
+.circuloGrandeBranco{
+    position: absolute;
+    right: 0;
+    top: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
+
+    background-color: none;
+}
+.fundoCirculoBranco{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.938);
+}
+
+
+@media(max-width: 767px){
+    body {
+        height: auto;
+        width: 100%;
+    }
+    html{
+        width: 100%;
+    }
+    #particles-js, .contemTodos{
+        height: 1100px;
+        width: 100%;
+    }
+    .topo, .navbar{
+        width: 100%;
+    }
+    .principal{
+        height: 900px;
+    }
+    .colunaCalc{
+        height: 50%;
+    }
+    .colunaResultado{
+        height: 50%;
+    }
+    .circuloGrandeRoxo{
+        width: 90%;
+    }
+}
