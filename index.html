@@ -35,59 +35,59 @@
                                 <div class="calculadora">
                                     <div class="interior">
                                         <div class="row visor">
-                                            <input id="cat_op" name="cat_op" type="text" class="cateto form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Cateto oposto">
+                                            <input id="cat_op" name="cat_op" type="text" class="cateto form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Cateto oposto" onclick="focoCatetoOposto()">
 
-                                            <input id="cat_adj" name="cat_adj" type="text" class="cateto form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Cateto adjacente">
+                                            <input id="cat_adj" name="cat_adj" type="text" class="cateto form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Cateto adjacente" onclick="focoCatetoAdjacente()">
                                         </div>
                                         <div class="row teclas">
                                             <div class="row linhaTecla">
-                                                <di class="col-4 colunaTecla colunaTecla">
+                                                <div class="col-4 colunaTecla colunaTecla">
                                                     <button class="num btn" onclick="digitar(1)">1</button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn" onclick="digitar(2)">2</button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn" onclick="digitar(3)">3</button>
-                                                </di>
+                                                </div>
                                             </div>
 
                                             <div class="row linhaTecla">
-                                                <di class="col-4 colunaTecla colunaTecla">
+                                                <div class="col-4 colunaTecla colunaTecla">
                                                     <button class="num btn" onclick="digitar(4)">4</button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn" onclick="digitar(5)">5</button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn" onclick="digitar(6)">6</button>
-                                                </di>
+                                                </div>
                                             </div>
 
                                             <div class="row linhaTecla">
-                                                <di class="col-4 colunaTecla colunaTecla">
+                                                <div class="col-4 colunaTecla colunaTecla">
                                                     <button class="num btn" onclick="digitar(7)">7</button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn" onclick="digitar(8)">8</button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn" onclick="digitar(9)">9</button>
-                                                </di>
+                                                </div>
                                             </div>
 
                                             <div class="row linhaTecla">
-                                                <di class="col-4 colunaTecla colunaTecla">
-                                                    <button class="apaga num btn" onclick="digitar(X)">
+                                                <div class="col-4 colunaTecla colunaTecla">
+                                                    <button class="apaga num btn btnApaga" onclick="apagaCampo()">
                                                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="backspace" class="svg-inline--fa fa-backspace fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M576 64H205.26A63.97 63.97 0 0 0 160 82.75L9.37 233.37c-12.5 12.5-12.5 32.76 0 45.25L160 429.25c12 12 28.28 18.75 45.25 18.75H576c35.35 0 64-28.65 64-64V128c0-35.35-28.65-64-64-64zm-84.69 254.06c6.25 6.25 6.25 16.38 0 22.63l-22.62 22.62c-6.25 6.25-16.38 6.25-22.63 0L384 301.25l-62.06 62.06c-6.25 6.25-16.38 6.25-22.63 0l-22.62-22.62c-6.25-6.25-6.25-16.38 0-22.63L338.75 256l-62.06-62.06c-6.25-6.25-6.25-16.38 0-22.63l22.62-22.62c6.25-6.25 16.38-6.25 22.63 0L384 210.75l62.06-62.06c6.25-6.25 16.38-6.25 22.63 0l22.62 22.62c6.25 6.25 6.25 16.38 0 22.63L429.25 256l62.06 62.06z"></path></svg>
                                                     </button>
-                                                </di>
-                                                <di class="col-4 colunaTecla">
+                                                </div>
+                                                <div class="col-4 colunaTecla">
                                                     <button class="num btn " onclick="digitar(0)">0</button>
-                                                </di>
-                                                <di class="igual col-4 colunaTecla">
-                                                    <button class="num btn" onclick="digitar(=)">=</button>
-                                                </di>
+                                                </div>
+                                                <div class="igual col-4 colunaTecla">
+                                                    <button class="num btn btnIgual" onclick="calculaHip()">=</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -100,52 +100,46 @@
                                     <div class="interior">
                                         <div class="row resultadoTriangulo">
                                             <svg viewBox="0 0 432 317" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path class="lado1" d="M62.103 9L62.103 219.415" stroke="white" stroke-width="10"/>
+                                                <path class="lado1" d="M62.103 9L62.103 219.415" stroke="white" stroke-width="10" onclick="focoCatetoOposto()"/>
                                                 <path class="lado2"  d="M59.3073 5.00001L397.376 219.5" stroke="white" stroke-width="10"/>
-                                                <path class="lado3"  d="M57.3072 219.042L398.307 219.042" stroke="white" stroke-width="10"/>
+                                                <path class="lado3"  d="M57.3072 219.042L398.307 219.042" stroke="white" stroke-width="10" onclick="focoCatetoAdjacente()"/>
                                             </svg>
                                         </div>
                                         <div class="row teclas">
                                             <div class="row linhaFormula">
-                                                <di class="col-12 colunaVariaveis formula">
-                                                    h<sup>2</sup> = co<sup>2</sup> + ca<sup>2</sup>
-                                                </di>
+                                                <div class="col-12 colunaVariaveis formula">
+                                                    h<sup><small>2</small></sup> = co<sup><small>2</small></sup> + ca<sup><small>2</small></sup>
+                                                </div>
                                             </div>
 
                                             <div class="row linhaFormula">
-                                                <di class="col-3 colunaVariaveis colunaVariaveis">
-                                                    <div class="campoVariavel btn">4</div>
-                                                </di>
-                                                <di class="col-1 colunaVariaveis">
+                                                <div class="col-3 colunaVariaveis colunaVariaveis">
+                                                    <div class="campoVariavel btn" id="hipotenusa">h<sup><small>2</small></sup></div>
+                                                </div>
+                                                <div class="col-1 colunaVariaveis">
                                                     <div class="campoVariavel btn">=</div>
-                                                </di>
-                                                <di class="col-3 colunaVariaveis">
-                                                    <div class="campoVariavel btn">6</div>
-                                                </di>
-                                                <di class="col-1 colunaVariaveis">
+                                                </div>
+                                                <div class="col-3 colunaVariaveis">
+                                                    <div class="campoVariavel btn" id="coQuadrado"></div>
+                                                </div>
+                                                <div class="col-1 colunaVariaveis">
                                                     <div class="campoVariavel btn">+</div>
-                                                </di>
-                                                <di class="col-4 colunaVariaveis">
-                                                    <div class="campoVariavel btn">6</div>
-                                                </di>
+                                                </div>
+                                                <div class="col-4 colunaVariaveis">
+                                                    <div class="campoVariavel btn" id="caQuadrado"></div>
+                                                </div>
                                             </div>
 
                                             <div class="row linhaFormula">
-                                                <di class="col-3 colunaVariaveis colunaVariaveis">
-                                                    <div class="campoVariavel btn">4</div>
-                                                </di>
-                                                <di class="col-1 colunaVariaveis">
+                                                <div class="col-2 colunaVariaveis colunaVariaveis">
+                                                    <div class="campoVariavel btn" id="hipotenusaResultado">hip</div>
+                                                </div>
+                                                <div class="col-1 colunaVariaveis">
                                                     <div class="campoVariavel btn">=</div>
-                                                </di>
-                                                <di class="col-3 colunaVariaveis">
-                                                    <div class="campoVariavel btn">6</div>
-                                                </di>
-                                                <di class="col-1 colunaVariaveis">
-                                                    <div class="campoVariavel btn">+</div>
-                                                </di>
-                                                <di class="col-4 colunaVariaveis">
-                                                    <div class="campoVariavel btn">6</div>
-                                                </di>
+                                                </div>
+                                                <div class="col-9 colunaVariaveis">
+                                                    <div class="campoVariavel btn" id="resultadoAPI"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
