@@ -17,6 +17,8 @@ O objeto a ser encaminhado para a API deverá ser em formato JSON, da seguinte f
     "cat_adj": 9,
 }
 
+## [Acesse aqui a aplicação on-line](https://luanalencinas.github.io/pitagorasCalc/)
+
 ## Commits no padrão
 
 ## Mensagens de commit styleguide
